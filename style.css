@@ -82,6 +82,7 @@ body {
 }
 section {
   min-height: 80vh;
+  overflow-x:hidden;
 }
 
 .container {
@@ -292,7 +293,7 @@ section {
 width:100%;
 height:100%;
 grid-area:one;
-/* grid-column: 1; */
+grid-column: 1 / 3;
 }
 
 .images-col> .mobile {
@@ -358,6 +359,10 @@ footer{
 /* RESPONSIVE MOBILE DEVICE  */
 
 @media (max-width: 490px) {
+
+  body{
+  overflow-x:hidden;
+  }
   .navbar {
     padding: 20px;
     border: none;
